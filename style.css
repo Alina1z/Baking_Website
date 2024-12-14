@@ -1,0 +1,133 @@
+/* Apply box-sizing globally */
+* {
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* Very light pink background */
+    color: #333; /* Dark gray text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings styling */
+h1, h3 {
+    color: #ff69b4; /* Hot pink for headings */
+    text-align: center;
+    font-family: 'Pacifico', cursive, sans-serif; /* Playful font for headings */
+}
+
+/* Add some padding to the body content */
+.container {
+    padding: 30px;
+}
+
+/* Home page heading adjustment */
+.home-heading {
+    margin-top: 50px; /* Adds space above the heading */
+    position: relative; /* Keeps it above any overlapping elements */
+    z-index: 1; /* Ensures visibility if overlapping occurs */
+    text-align: center; /* Centers the text */
+}
+
+/* Remove bullets for unordered lists */
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Navigation link styling */
+.navbar-nav .nav-link {
+    font-size: 20px; /* Increase font size for larger text */
+    color: #ff69b4; /* Hot pink text color */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    border: 2px solid transparent; /* Invisible border for smooth hover effect */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for navigation links */
+.navbar-nav .nav-link:hover {
+    background-color: #ffb6c1; /* Light pink background */
+    color: #fff; /* White text on hover */
+    border-color: #ff69b4; /* Hot pink border on hover */
+}
+
+/* Active navigation link styling */
+.navbar-nav .nav-link.active {
+    background-color: #ff69b4; /* Hot pink background for active link */
+    color: #fff; /* White text for active link */
+    border-color: #ff69b4; /* Match border color with background */
+}
+
+/* Cards for the project section */
+.card {
+    background-color: #ffe0f7; /* Light pink for card background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card when hovered */
+}
+
+/* Card content styling */
+.card-body {
+    padding: 15px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ffb6c1; /* Soft pink footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Avoids fixed footer overlap */
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    background-color: #ff69b4; /* Hot pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+}
+
+/* Links styling */
+a {
+    color: #ff69b4; /* Pink color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Adjust heading size for smaller screens */
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
